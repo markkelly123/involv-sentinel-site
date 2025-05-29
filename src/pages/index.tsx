@@ -10,28 +10,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-gray-900 text-white">
         {/* Header */}
-        <header className="bg-white shadow-sm border-b">
+        <header className="bg-gray-900 shadow-sm border-b border-gray-700">
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-green-600">PrimeEdge</span>
+              <img 
+  src="/logo-involve-primeedge-white.svg" 
+  alt="PrimeEdge" 
+  className="h-8 w-auto"
+/>
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="/features" className="text-gray-700 hover:text-gray-900">Features</a>
-              <a href="/documentation" className="text-gray-700 hover:text-gray-900">Documentation</a>
-              <a href="/insights" className="text-gray-700 hover:text-gray-900">Insights</a>
-              <a href="/faqs" className="text-gray-700 hover:text-gray-900">FAQs</a>
-            </nav>
+  <a href="/features" className="text-gray-300 hover:text-white">Features</a>
+  <a href="/documentation" className="text-gray-300 hover:text-white">Documentation</a>
+  <a href="/insights" className="text-gray-300 hover:text-white">Insights</a>
+  <a href="/faqs" className="text-gray-300 hover:text-white">FAQs</a>
+</nav>
             
             <div className="flex items-center space-x-4">
               <a href="/login" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
-                Login
-              </a>
-              <a href="/contact" className="border border-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-50 transition-colors">
-                Contact
-              </a>
+  Login
+</a>
+<a href="/contact" className="border border-gray-300 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors">
+  Contact
+</a>
             </div>
           </div>
         </header>
@@ -114,11 +118,17 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gray-50 border-t py-12 px-4">
+        <footer className="bg-gray-900 shadow-sm border-b border-gray-700">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
-                <span className="text-xl font-bold text-green-600 mb-4 block">PrimeEdge</span>
+                <div className="mb-4">
+  <img 
+    src="/logo-involve-primeedge-white.svg" 
+    alt="PrimeEdge" 
+    className="h-6 w-auto"
+  />
+</div>
                 <p className="text-gray-600 text-sm">
                   AI-powered optimization tool for EGM floors.
                 </p>
