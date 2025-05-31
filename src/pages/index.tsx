@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -16,26 +17,26 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <img 
-  src="/logo-involve-primeedge-white.svg" 
-  alt="PrimeEdge" 
-  className="h-8 w-auto"
-/>
+                src="/logo-involve-primeedge-white.svg" 
+                alt="PrimeEdge" 
+                className="h-8 w-auto"
+              />
             </div>
             
             <nav className="hidden md:flex space-x-8">
-  <a href="/features" className="text-gray-300 hover:text-white">Features</a>
-  <a href="/documentation" className="text-gray-300 hover:text-white">Documentation</a>
-  <a href="/insights" className="text-gray-300 hover:text-white">Insights</a>
-  <a href="/faqs" className="text-gray-300 hover:text-white">FAQs</a>
-</nav>
+              <Link href="/features" className="text-gray-300 hover:text-white">Features</Link>
+              <Link href="/documentation" className="text-gray-300 hover:text-white">Documentation</Link>
+              <Link href="/insights" className="text-gray-300 hover:text-white">Insights</Link>
+              <Link href="/faqs" className="text-gray-300 hover:text-white">FAQs</Link>
+            </nav>
             
             <div className="flex items-center space-x-4">
-              <a href="/login" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
-  Login
-</a>
-<a href="/contact" className="border border-gray-300 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors">
-  Contact
-</a>
+              <Link href="/login" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
+                Login
+              </Link>
+              <Link href="/contact" className="border border-gray-300 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors">
+                Contact
+              </Link>
             </div>
           </div>
         </header>
@@ -53,12 +54,12 @@ export default function Home() {
               An AI-powered optimization tool for EGM floors. Visualize performance, simulate changes, and receive data-backed recommendations that drive revenue.
             </p>
             <div className="flex justify-center space-x-4">
-              <a href="/login" className="bg-white text-green-600 px-6 py-3 rounded font-medium hover:bg-gray-100 transition-colors">
+              <Link href="/login" className="bg-white text-green-600 px-6 py-3 rounded font-medium hover:bg-gray-100 transition-colors">
                 Login to PrimeEdge
-              </a>
-              <a href="/contact" className="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-green-600 transition-colors">
+              </Link>
+              <Link href="/contact" className="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-green-600 transition-colors">
                 Request Demo
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -107,12 +108,12 @@ export default function Home() {
               Join venues across Australia using data-driven insights to maximize their gaming performance.
             </p>
             <div className="flex justify-center space-x-4">
-              <a href="/login" className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition-colors">
+              <Link href="/login" className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition-colors">
                 Login
-              </a>
-              <a href="/contact" className="border border-gray-300 text-gray-700 px-6 py-3 rounded hover:bg-gray-50 transition-colors">
+              </Link>
+              <Link href="/contact" className="border border-gray-300 text-gray-700 px-6 py-3 rounded hover:bg-gray-50 transition-colors">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -123,12 +124,12 @@ export default function Home() {
             <div className="grid md:grid-cols-4 gap-8">
               <div>
                 <div className="mb-4">
-  <img 
-    src="/logo-involve-primeedge-white.svg" 
-    alt="PrimeEdge" 
-    className="h-6 w-auto"
-  />
-</div>
+                  <img 
+                    src="/logo-involve-primeedge-white.svg" 
+                    alt="PrimeEdge" 
+                    className="h-6 w-auto"
+                  />
+                </div>
                 <p className="text-gray-600 text-sm">
                   AI-powered optimization tool for EGM floors.
                 </p>
@@ -140,18 +141,18 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold mb-4 text-gray-900">Product</h3>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li><a href="/features" className="hover:text-gray-900">Features</a></li>
-                  <li><a href="/documentation" className="hover:text-gray-900">Documentation</a></li>
-                  <li><a href="/faqs" className="hover:text-gray-900">FAQs</a></li>
+                  <li><Link href="/features" className="hover:text-gray-900">Features</Link></li>
+                  <li><Link href="/documentation" className="hover:text-gray-900">Documentation</Link></li>
+                  <li><Link href="/faqs" className="hover:text-gray-900">FAQs</Link></li>
                 </ul>
               </div>
               
               <div>
                 <h3 className="font-semibold mb-4 text-gray-900">Resources</h3>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li><a href="/insights" className="hover:text-gray-900">Insights</a></li>
-                  <li><a href="/case-studies" className="hover:text-gray-900">Case Studies</a></li>
-                  <li><a href="/contact" className="hover:text-gray-900">Support</a></li>
+                  <li><Link href="/insights" className="hover:text-gray-900">Insights</Link></li>
+                  <li><Link href="/case-studies" className="hover:text-gray-900">Case Studies</Link></li>
+                  <li><Link href="/contact" className="hover:text-gray-900">Support</Link></li>
                 </ul>
               </div>
               
@@ -168,8 +169,8 @@ export default function Home() {
             <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
               <p>&copy; 2025 Involv. All rights reserved.</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="/privacy-policy" className="hover:text-gray-700">Privacy Policy</a>
-                <a href="/terms-of-use" className="hover:text-gray-700">Terms of Use</a>
+                <Link href="/privacy-policy" className="hover:text-gray-700">Privacy Policy</Link>
+                <Link href="/terms-of-use" className="hover:text-gray-700">Terms of Use</Link>
               </div>
             </div>
           </div>
