@@ -92,7 +92,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">From Guessing to Knowing</h2>
               <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-                Even today, many gaming decisions are made based on experience and gut feel. Which is fine, but there's a better way and it yeilds greater returns on your asset and conversion investment decisions.
+                Even today, many gaming decisions are made based on experience and gut feel. Which is fine, but there&apos;s a better way and it yeilds greater returns on your asset and conversion investment decisions.
               </p>
             </div>
 
@@ -200,7 +200,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Venues Using PrimeEdge Report</h2>
             <div className="bg-gray-50 rounded-lg p-8 mb-8">
               <blockquote className="text-lg text-gray-700 italic mb-4">
-                "Finally understand which machines are actually working and which ones aren't. Takes the guesswork out of gaming floor decisions."
+                "Finally understand which machines are actually working and which ones "Which machines are actually performing well and which aren&apos;t?". Takes the guesswork out of gaming floor decisions."
               </blockquote>
               <div className="text-sm text-gray-600">
                 — Gaming Manager, Regional Club
@@ -229,7 +229,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8">Built by Gaming Industry Experts</h2>
             <div className="bg-gray-700 rounded-lg p-8">
               <p className="text-gray-300 mb-6 leading-relaxed">
-                PrimeEdge is developed by Involv, led by gaming industry veterans including Con Nikitas, who managed nearly 13,000 EGMs across Australia's largest gaming operations. We understand gaming venues because we've run them.
+                PrimeEdge is developed by Involv, led by gaming industry veterans including Con Nikitas, who managed nearly 13,000 EGMs across Australia&apos;s largest gaming operations. We understand gaming venues because we&apos;ve run them.
               </p>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
@@ -331,7 +331,7 @@ export default function Home() {
 
 // Data
 const gamingChallenges = [
-  "Which machines are actually performing well and which aren't?",
+  "Which machines are actually performing well and which aren&apos;t",
   "Where should we place new machines for best results?",
   "How do we know if floor changes are actually improving revenue?",
   "Making decisions based on gut feel rather than data",
@@ -342,7 +342,7 @@ const currentApproach = [
   "Move machines based on experience and gut feel",
   "Try different layouts and hope for the best",
   "Rely on manufacturer recommendations only",
-  "Make changes when revenue seems to drop", 
+  "Make changes when turnover seems to drop", 
   "Difficulty measuring if changes actually worked",
   "Limited visibility into machine-level performance"
 ]
@@ -352,7 +352,7 @@ const primeEdgeApproach = [
   "Get data-backed recommendations for placement",
   "Test layout changes before implementing them",
   "Track revenue impact of every change",
-  "Clear insights into what's working and what's not",
+  "Clear insights into what&apos;s working and what&apos;s not",
   "Make decisions based on real performance data"
 ]
 
@@ -364,7 +364,7 @@ const howItWorksSteps = [
   },
   {
     title: "Get Clear Insights",
-    description: "Visual dashboards show you exactly what's working and what isn't on your gaming floor.",
+    description: "Visual dashboards show you exactly what&apos;s working and what isn&apos;t on your gaming floor.",
     example: "Which machines are underperforming, where the hot spots are"
   },
   {
