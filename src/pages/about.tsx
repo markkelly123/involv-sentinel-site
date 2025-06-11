@@ -77,7 +77,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-white">Our Story</h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              PrimeEdge was created by Involv's seasoned gaming professionals who recognised that optimising a gaming floor is a complex, non-linear challenge - exactly what AI excels at solving.
+              PrimeEdge was created by Involv&apos;s seasoned gaming professionals who recognised that optimising a gaming floor is a complex, non-linear challenge - exactly what AI excels at solving.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4 text-emerald-400">The Problem We Saw</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Gaming managers are making critical floor decisions based on experience and heuristics. This isn't necessarily wrong, it just cannot account for the many permutations for revenue optimisation. Traditional approaches treat each machine in isolation, ignoring the complex ecosystem interactions that drive player behaviour.
+                Gaming managers are making critical floor decisions based on experience and heuristics. This isn&apos;t necessarily wrong, it just can&apos;t compete with million plus permutations PrimeEdge computes for revenue optimisation. Traditional approaches treat each machine in isolation, ignoring the complex ecosystem interactions that drive player behaviour.
               </p>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 At the same time, the gaming industry is becoming increasingly competitive. Player preferences are evolving, new games are launching constantly, and venues need every advantage to maximise their gaming performance and protect - or better still, grow - their market share.
@@ -176,7 +176,7 @@ export default function About() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-white">How PrimeEdge Works</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            We don't just build software and walk away. Our platform is designed based on real venue experience and advanced AI research to ensure it actually delivers measurable results.
+            We don&apos;t just build software and walk away. Our platform is designed based on real venue experience and advanced AI research to ensure it actually delivers measurable results.
           </p>
         </div>
 
