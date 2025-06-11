@@ -30,7 +30,7 @@ export default function About() {
                 Built by Gaming Industry Veterans Who Actually Understand Your Business
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                We are not consultants who lack hands-on experience. We are former gaming operators, data scientists, and performance optimisation specialists who have lived the reality of maximising gaming revenue at scale.
+                We are not consultants who lack hands-on experience. We are former gaming operators, data scientists, and performance optimization specialists who have lived the reality of maximizing gaming revenue at scale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://involv.com.au/about/our-team" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-8 py-3 rounded-lg transition-all duration-200 font-medium text-center">
@@ -77,7 +77,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-white">Our Story</h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              PrimeEdge was created by Involv&apos;s seasoned gaming professionals who recognised that optimising a gaming floor is a complex, non-linear challenge - exactly what AI excels at solving.
+              PrimeEdge was created by the team at Involv - seasoned gaming professionals who recognised a gap in the market: no AI-powered optimization technology built specifically for Australian gaming venues.
             </p>
           </div>
 
@@ -85,13 +85,13 @@ export default function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4 text-emerald-400">The Problem We Saw</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Gaming managers are making critical floor decisions based on experience and heuristics. This isn&apos;t necessarily wrong, it just can&apos;t compete with million plus permutations PrimeEdge computes for revenue optimisation. Traditional approaches treat each machine in isolation, ignoring the complex ecosystem interactions that drive player behaviour.
+                Gaming managers are making critical floor decisions based on intuition and limited data, missing opportunities for revenue optimization. Traditional approaches treat each machine in isolation, ignoring the complex ecosystem interactions that drive player behaviour.
               </p>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                At the same time, the gaming industry is becoming increasingly competitive. Player preferences are evolving, new games are launching constantly, and venues need every advantage to maximise their gaming performance and protect - or better still, grow - their market share.
+                At the same time, the gaming industry is becoming increasingly competitive. Player preferences are evolving, new games are launching constantly, and venues need every advantage to maximize their gaming performance and stay profitable.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                We had a unique view of the market combining deep gaming operations experience with the skillset of talented data scientists and PhDs. With competition intesifying and increased regulation coming, experience will struggle to match the analysis power of our AI platform.
+                We had a unique view of the market combining deep gaming operations experience with advanced AI capabilities. We knew there was a better way - an optimization platform built specifically for Australian gaming venues, by people who actually understand how venues operate.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-8 border border-white/10">
@@ -119,7 +119,7 @@ export default function About() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-white">Our Mission</h2>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            To transform gaming floor management from guesswork into science, delivering AI-powered optimisation that maximises revenue while enhancing player experiences at Australian pubs and clubs.
+            To transform gaming floor management from guesswork into science, delivering AI-powered optimization that maximizes revenue while enhancing player experiences at Australian pubs and clubs.
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-white">Led by Industry Veterans</h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Our leadership team brings together the exact expertise needed to build AI-powered gaming optimisation that delivers real results.
+              Our leadership team brings together the exact expertise needed to build AI-powered gaming optimization that delivers real results.
             </p>
           </div>
 
@@ -164,7 +164,7 @@ export default function About() {
 
           <div className="text-center mt-8">
             <a href="https://involv.com.au/about/our-team" className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-6 py-3 rounded-lg transition-all duration-200 font-medium">
-              Meet the Leadership Team
+              Meet the Full Team
               <i className="lni lni-arrow-right text-xl ml-2"></i>
             </a>
           </div>
@@ -176,7 +176,7 @@ export default function About() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-white">How PrimeEdge Works</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            We don&apos;t just build software and walk away. Our platform is designed based on real venue experience and advanced AI research to ensure it actually delivers measurable results.
+            We do not just build software and walk away. Our platform is designed based on real venue experience and advanced AI research to ensure it actually delivers measurable results.
           </p>
         </div>
 
@@ -208,9 +208,9 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-emerald-600/20 to-emerald-800/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Experience AI-Powered Gaming Optimisation?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Experience AI-Powered Gaming Optimization?</h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Do better than intelligent guesswork and heurisitics. Experience AI-powered optimisation built specifically for Australian gaming venues.
+            Stop guessing about your gaming floor performance. Experience AI-powered optimization built specifically for Australian gaming venues.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-8 py-3 rounded-lg transition-all duration-200 font-medium">
@@ -230,6 +230,7 @@ export default function About() {
 function ProfileImage({ leader, className }: { leader: any; className: string }) {
   return (
     <div className={`${className} overflow-hidden bg-emerald-500 flex items-center justify-center relative`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img 
         src={`/images/team/${leader.slug}.jpg`}
         alt={leader.name}
@@ -256,7 +257,7 @@ const differentiators = [
   },
   {
     title: "AI-Powered Intelligence",
-    description: "Advanced algorithms based on 20+ years of research from financial modeling and gaming optimisation."
+    description: "Advanced algorithms based on 20+ years of research from financial modeling and gaming optimization."
   },
   {
     title: "Real-World Validation",
@@ -264,7 +265,7 @@ const differentiators = [
   },
   {
     title: "Continuous Learning",
-    description: "AI models continuously improve as they process more venue data - enhanced further with carded play behaviour patterns."
+    description: "AI models continuously improve as they process more venue data and player behaviour patterns."
   }
 ];
 
@@ -282,7 +283,7 @@ const values = [
   {
     icon: "lni lni-trend-up-2",
     title: "Revenue Focus",
-    description: "Every feature is designed to maximise gaming revenue while enhancing player experiences."
+    description: "Every feature is designed to maximize gaming revenue while enhancing player experiences."
   }
 ];
 
@@ -306,14 +307,14 @@ const leadership = [
     slug: "tim-barnett",
     role: "Chief Strategy Officer",
     initials: "TB",
-    highlight: "20+ years hospitality & gaming leadership with deep expertise in performance optimisation."
+    highlight: "20+ years hospitality & gaming leadership with deep expertise in performance optimization."
   },
   {
     name: "Mark Kelly",
     slug: "mark-kelly",
     role: "Chief Operating Officer",
     initials: "MK",
-    highlight: "30 years transformational change experience, 6 years specialising in gaming compliance and loyalty."
+    highlight: "30 years transformational change experience, 6 years specialising in gaming performance and EGM optimization."
   }
 ];
 
@@ -321,27 +322,27 @@ const approach = [
   {
     icon: "lni lni-search-2",
     title: "Deep Gaming Intelligence",
-    description: "Built on comprehensive understanding of gaming ecosystems, player behaviour, and revenue optimisation principles.",
+    description: "Built on comprehensive understanding of gaming ecosystems, player behaviour, and revenue optimization principles.",
     points: [
       "AI-powered recommendation engine",
       "Real-time performance monitoring",
-      "Venue-specific optimisation models",
+      "Venue-specific optimization models",
       "Integration with existing gaming systems"
     ]
   },
   {
-    icon: "lni lni-rocket-6",
+    icon: "lni lni-rocket",
     title: "Rapid Implementation",
-    description: "Designed for quick setup and immediate value delivery with no disruption to operations.",
+    description: "Designed for quick setup and immediate value delivery with minimal disruption to operations.",
     points: [
-      "Fast data acquisition process",
+      "Fast data integration process",
       "Comprehensive training and support",
       "Gradual feature rollout",
       "Dedicated customer success team"
     ]
   },
   {
-    icon: "lni lni-signal-2-full",
+    icon: "lni lni-analytics",
     title: "Measurable Results",
     description: "Track your gaming performance improvements with clear analytics and revenue attribution.",
     points: [
@@ -354,11 +355,11 @@ const approach = [
   {
     icon: "lni lni-bulb-beat",
     title: "Continuous Innovation",
-    description: "Ongoing tuning of the AI model employed for your venue and new features ensure you stay ahead of industry trends.",
+    description: "Regular AI model updates and new features ensure you stay ahead of industry trends.",
     points: [
-      "Automatic AI model refinement",
+      "Automatic AI model improvements",
       "New feature releases",
-      "Industry trend analysis and benchmarking",
+      "Industry trend analysis",
       "Customer feedback integration"
     ]
   }

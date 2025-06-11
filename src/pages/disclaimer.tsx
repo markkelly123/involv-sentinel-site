@@ -41,7 +41,7 @@ const DisclaimerPage = () => {
                     hello@involv.com.au
                   </a>
                 </p>
-              </div>
+              </section>
             </div>
           </div>
         </div>

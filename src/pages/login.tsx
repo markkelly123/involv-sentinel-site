@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const LoginPage = () => {
@@ -31,9 +32,9 @@ const LoginPage = () => {
               
               <p className="text-sm text-gray-400">
                 Already have questions?{' '}
-                <a href="/contact" className="text-emerald-400 hover:text-emerald-300">
+                <Link href="/contact" className="text-emerald-400 hover:text-emerald-300">
                   Contact our team
-                </a>
+                </Link>
               </p>
             </div>
           </div>
