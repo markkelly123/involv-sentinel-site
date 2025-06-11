@@ -93,75 +93,13 @@ const DocumentationPage = () => {
                   <p className="text-sm font-medium text-emerald-400 mb-2">Will include:</p>
                   {section.topics.map((topic, topicIndex) => (
                     <div key={topicIndex} className="flex items-center text-sm text-gray-400">
-                      <i className="lni lni-checkmark-circle text-emerald-400 mr-2"></i>
+                      <i className="lni lni-check-circle-1 text-emerald-400 mr-2"></i>
                       {topic}
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Preview Section */}
-      <section className="py-20 bg-gray-900/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Documentation preview
-            </h2>
-            <p className="text-xl text-gray-400">
-              Here&apos;s what our documentation structure will look like
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 border border-white/10">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-1">
-                <h3 className="text-lg font-semibold text-emerald-400 mb-4">
-                  <i className="lni lni-label-list mr-2"></i>
-                  Navigation
-                </h3>
-                <div className="space-y-2 text-sm">
-                  <div className="text-white font-medium">Getting Started</div>
-                  <div className="text-gray-400 ml-4">• Quick Start Guide</div>
-                  <div className="text-gray-400 ml-4">• Platform Overview</div>
-                  <div className="text-white font-medium">AI Features</div>
-                  <div className="text-gray-400 ml-4">• Recommendation Engine</div>
-                  <div className="text-gray-400 ml-4">• Predictive Analytics</div>
-                  <div className="text-white font-medium">Floor Management</div>
-                  <div className="text-gray-400 ml-4">• Map Creation</div>
-                  <div className="text-gray-400 ml-4">• Data Visualisation</div>
-                </div>
-              </div>
-              <div className="lg:col-span-2">
-                <h3 className="text-lg font-semibold text-emerald-400 mb-4">
-                  <i className="lni lni-file-text mr-2"></i>
-                  Content Preview
-                </h3>
-                <div className="bg-gray-800/50 rounded-lg p-6">
-                  <h4 className="text-white font-bold mb-3">Getting Started with PrimeEdge</h4>
-                  <p className="text-gray-300 mb-4">
-                    Welcome to PrimeEdge! This guide will walk you through the initial setup and help you understand the core concepts...
-                  </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-gray-400">
-                      <i className="lni lni-check-circle-1 text-emerald-400 mr-2"></i>
-                      Step-by-step tutorials
-                    </div>
-                    <div className="flex items-center text-gray-400">
-                      <i className="lni lni-check-circle-1 text-emerald-400 mr-2"></i>
-                      Interactive examples
-                    </div>
-                    <div className="flex items-center text-gray-400">
-                      <i className="lni lni-check-circle-1 text-emerald-400 mr-2"></i>
-                      Best practice guides
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

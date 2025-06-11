@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const FeaturesPage = () => {
@@ -234,13 +235,13 @@ const FeaturesPage = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
                   <p className="text-gray-300 mb-4">
-                    Your gaming floor isn't just a collection of individual machines—it's a complex ecosystem where every element influences every other element.
+                    Your gaming floor isn&apos;t just a collection of individual machines - it&apos;s a complex ecosystem where every element influences every other element.
                   </p>
                   <p className="text-gray-300 mb-4">
                     Traditional approaches treat each machine in isolation, missing the crucial interactions that drive player behaviour and revenue performance.
                   </p>
                   <p className="text-gray-300">
-                    PrimeEdge's advanced algorithms model these complex relationships, accounting for cannibalisation effects, product placement impact, and player flow patterns.
+                    PrimeEdge&apos;s advanced algorithms model these complex relationships, accounting for cannibalisation effects, product placement impact, and player flow patterns.
                   </p>
                 </div>
                 <div className="bg-gray-900/50 rounded-xl p-6">
@@ -301,6 +302,7 @@ const FeaturesPage = () => {
               <h3 className="text-2xl font-bold text-white text-center mb-8">Compatible with Leading Gaming Systems</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-700/50 transition-colors duration-200 flex items-center justify-center h-24">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src="/GMS/aristocrat.png" 
                     alt="Aristocrat" 
@@ -308,6 +310,7 @@ const FeaturesPage = () => {
                   />
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-700/50 transition-colors duration-200 flex items-center justify-center h-24">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src="/GMS/ebet.png" 
                     alt="eBet" 
@@ -315,6 +318,7 @@ const FeaturesPage = () => {
                   />
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-700/50 transition-colors duration-200 flex items-center justify-center h-24">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src="/GMS/konami.png" 
                     alt="Konami" 
@@ -322,6 +326,7 @@ const FeaturesPage = () => {
                   />
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-700/50 transition-colors duration-200 flex items-center justify-center h-24">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src="/GMS/utopia.png" 
                     alt="Utopia" 
@@ -343,7 +348,7 @@ const FeaturesPage = () => {
                 Proven results across Australian venues
               </h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                Real venues achieving real results with PrimeEdge's AI-powered optimisation.
+                Real venues achieving real results with PrimeEdge&apos;s AI-powered optimisation.
               </p>
             </div>
 
@@ -416,18 +421,18 @@ const FeaturesPage = () => {
             Experience the power of AI-driven EGM optimisation with a personalised demonstration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
               className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-emerald-500/25"
             >
               Schedule Demo
-            </a>
-            <a
+            </Link>
+            <Link
               href="/support/documentation"
               className="border border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-[#0f1115] px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200"
             >
               View Documentation
-            </a>
+            </Link>
           </div>
         </div>
       </section>

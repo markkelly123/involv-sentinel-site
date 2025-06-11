@@ -165,53 +165,6 @@ const FAQsPage = () => {
         </div>
       </section>
 
-      {/* FAQ Preview */}
-      <section className="py-20 bg-gray-900/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              FAQ format preview
-            </h2>
-            <p className="text-xl text-gray-400">
-              Here&apos;s how our FAQs will be structured for maximum clarity
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 border border-white/10">
-            <div className="space-y-6">
-              <div className="border-b border-gray-700 pb-6">
-                <div className="flex items-center justify-between cursor-pointer">
-                  <h3 className="text-lg font-semibold text-white">How does PrimeEdge&apos;s AI make recommendations?</h3>
-                  <i className="lni lni-chevron-down text-emerald-400"></i>
-                </div>
-                <div className="mt-4 text-gray-300">
-                  <p className="mb-3">
-                    PrimeEdge uses advanced machine learning algorithms that analyse multiple data points including player behaviour, machine performance, and venue-specific factors...
-                  </p>
-                  <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-4">
-                    <div className="flex items-start">
-                      <i className="lni lni-bulb-1 text-emerald-400 mr-3 mt-1"></i>
-                      <div>
-                        <p className="text-emerald-400 font-medium mb-1">Pro Tip:</p>
-                        <p className="text-gray-300 text-sm">
-                          The more historical data you provide, the more accurate the AI recommendations become.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <span className="text-gray-400 text-sm">
-                  + Many more detailed answers with examples, screenshots, and expert tips
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

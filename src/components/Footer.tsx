@@ -11,6 +11,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-4">
               <Link href="https://involv.com.au" target="_blank" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logo-involv-white.svg" alt="Involv" className="h-6 w-auto hover:opacity-80 transition-opacity" />
               </Link>
             </div>
