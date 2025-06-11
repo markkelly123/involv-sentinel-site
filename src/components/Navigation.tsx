@@ -51,11 +51,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img 
-                src="/logo-involve-primeedge-white.svg" 
-                alt="PrimeEdge by Involv" 
-                className="h-8 w-auto"
-              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-involve-primeedge-white.svg" alt="PrimeEdge by Involv" className="h-8 w-auto" />
             </Link>
           </div>
 
