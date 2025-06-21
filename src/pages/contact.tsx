@@ -101,7 +101,7 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Ready to optimize your gaming floor performance?
+                Ready to uplift your gaming floor performance?
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Get a personalised demo of PrimeEdge or reach out with any questions about using AI for EGM optimisation.
@@ -123,9 +123,9 @@ export default function Contact() {
                       <div className="w-16 h-16 bg-green-900/50 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i className="lni lni-check-circle-1 text-3xl text-green-400"></i>
                       </div>
-                      <h3 className="text-xl font-semibold text-white mb-2">Message Sent Successfully</h3>
+                      <h3 className="text-xl font-semibold text-white mb-2">Message Sent Successfully.</h3>
                       <p className="text-gray-300">
-                        Thank you for contacting us. We'll respond within the next business day.
+                        Thank you for contacting us. We&apos;ll respond within the next business day.
                       </p>
                     </div>
                   ) : (
@@ -307,8 +307,8 @@ export default function Contact() {
                       <div>
                         <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                           {formData.inquiryType === 'Schedule a Demo' 
-                            ? 'Tell us about your gaming performance goals' 
-                            : 'Your message *'
+                            ? "Tell us about your gaming performance goals" 
+                            : "Your message *"
                           }
                         </label>
                         <textarea
@@ -384,7 +384,7 @@ export default function Contact() {
 
                     <div className="flex items-start">
                       <div className="w-12 h-12 bg-green-900/50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                        <i className="lni lni-headphone-1-mic text-xl text-green-400"></i>
+                        <i className="lni lni-telephone-1 text-xl text-green-400"></i>
                       </div>
                       <div>
                         <h4 className="font-semibold text-white">Phone</h4>
@@ -397,7 +397,7 @@ export default function Contact() {
 
                     <div className="flex items-start">
                       <div className="w-12 h-12 bg-green-900/50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                        <i className="lni lni-map-marker-7 text-xl text-green-400"></i>
+                        <i className="lni lni-map-marker-11 text-xl text-green-400"></i>
                       </div>
                       <div>
                         <h4 className="font-semibold text-white">Location</h4>
@@ -405,7 +405,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-
+                    
                   </div>
                 </div>
 
@@ -434,7 +434,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-white text-sm">Quick Response</h4>
-                        <p className="text-gray-400 text-sm">We'll contact you within 24 hours to address your inquiry</p>
+                        <p className="text-gray-400 text-sm">We&apos;ll contact you within 24-48 hours to address your inquiry</p>
                       </div>
                     </div>
                     
@@ -444,7 +444,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-white text-sm">Personalised Approach</h4>
-                        <p className="text-gray-400 text-sm">Tailored discussion or demo based on your venue's specific needs</p>
+                        <p className="text-gray-400 text-sm">Tailored discussion or demo based on your venue&apos;s specific needs</p>
                       </div>
                     </div>
                     
@@ -454,7 +454,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-white text-sm">Strategic Discussion</h4>
-                        <p className="text-gray-400 text-sm">Explore how PrimeEdge can optimize your gaming floor performance</p>
+                        <p className="text-gray-400 text-sm">Explore how PrimeEdge can improve your gaming floor performance</p>
                       </div>
                     </div>
                   </div>
