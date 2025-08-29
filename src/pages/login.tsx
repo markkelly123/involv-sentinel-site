@@ -1,47 +1,119 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
+// PRIMEEDGE LOGIN PAGE
+// Place this file at: src/pages/login.tsx
 
-const LoginPage = () => {
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+
+export default function Login() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
+  const router = useRouter()
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        // Successful login - redirect to home page
+        router.push('/')
+      } else {
+        setError(data.message || 'Login failed')
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
-    <Layout
-      title="Login - PrimeEdge by Involv"
-      description="Access your PrimeEdge account to optimize your gaming venue performance."
-    >
-      <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="bg-gray-900/50 border border-white/10 rounded-2xl p-8">
-          <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i className="lni lni-lock text-3xl text-emerald-400"></i>
-            </div>
-            <h1 className="text-2xl font-bold text-white mb-2">Access PrimeEdge</h1>
-            <p className="text-gray-400">Coming Soon</p>
-          </div>
-
-          <div className="text-center">
-            <p className="text-gray-300 mb-6">
-              User authentication and dashboard access will be available soon.
-            </p>
-            
-            <div className="space-y-4">
-              <a
-                href="mailto:hello@involv.com.au"
-                className="block w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
-              >
-                Request Access
-              </a>
-              
-              <p className="text-sm text-gray-400">
-                Already have questions?{' '}
-                <Link href="/contact" className="text-emerald-400 hover:text-emerald-300">
-                  Contact our team
-                </Link>
+    <>
+      <Head>
+        <title>Access Required - PrimeEdge</title>
+      </Head>
+      
+      <div className="min-h-screen bg-[#0f1115] flex items-center justify-center px-4">
+        <div className="max-w-md w-full">
+          <div className="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-700">
+            <div className="text-center mb-8">
+              <h1 className="text-2xl font-bold text-white mb-2">
+                Access Required
+              </h1>
+              <p className="text-gray-300">
+                Please sign in to continue to PrimeEdge
               </p>
+              <p className="text-sm text-gray-400 mt-2">
+                The science behind high-performance gaming venues
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-600 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-gray-400"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-2">
+                  Password
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-600 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-gray-400"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              {error && (
+                <div className="bg-red-900 border border-red-700 text-red-200 px-4 py-3 rounded">
+                  {error}
+                </div>
+              )}
+
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors disabled:opacity-50"
+              >
+                {isLoading ? 'Signing in...' : 'Sign In'}
+              </button>
+            </form>
+
+            <div className="mt-8 text-center text-sm text-gray-400">
+              Contact your administrator for access
             </div>
           </div>
         </div>
       </div>
-    </Layout>
-  );
-};
-
-export default LoginPage;
+    </>
+  )
+}
