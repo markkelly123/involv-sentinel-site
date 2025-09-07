@@ -35,14 +35,14 @@ export default function Sentinel() {
        </Head>
 
       <div className="bg-[#0f1115] text-white font-sans min-h-screen">
-        <Navigation currentPath={router.pathname} />
+        <Navigation />
 
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 pt-20 pb-24">
           <div className="text-center">
             <div className="mb-8">
               <Image 
-                src="/logo-sentinel-white.png" 
+                src="/logo-sentinel-white.svg" 
                 alt="Sentinel"
                 width={200}
                 height={60}

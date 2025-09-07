@@ -1,27 +1,33 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root[data-site="sentinel"] {
+  --bg-base: #1A2B3C;
+  --bg-surface: #222F3E;
+  --bg-border: #2F3F50;
+  --text-primary: #E6EEF5;
+  --text-secondary: #A0AEC0;
+  --text-muted: #7B8794;
+  --accent: #3B82F6;
+  --accent-hover: #2563EB;
+  --success: #4ADE80;
+  --warning: #FBBF24;
+  --danger: #F87171;
+}
+
+/* Default fallback */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --bg-base: #1A2B3C;
+  --bg-surface: #222F3E;
+  --bg-border: #2F3F50;
+  --text-primary: #E6EEF5;
+  --text-secondary: #A0AEC0;
+  --text-muted: #7B8794;
+  --accent: #3B82F6;
+  --accent-hover: #2563EB;
+  --success: #4ADE80;
+  --warning: #FBBF24;
+  --danger: #F87171;
 }
