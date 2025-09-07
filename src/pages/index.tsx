@@ -104,13 +104,7 @@ export default function Sentinel() {
               <div className="bg-[#1a1d21] rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <div className="w-full max-w-md mx-auto mb-6">
-                    <Image
-                      src="/austrac-be-aware-alert-action.png"
-                      alt="AUSTRAC Be Aware, Be Alert, Take Action"
-                      width={500}
-                      height={250}
-                      className="w-full h-auto rounded-lg"
-                    />
+                    <img src="/austrac-be-aware-alert-action.png" alt="test" />
                   </div>
                 </div>
                 <div className="text-center mb-6">

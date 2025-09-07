@@ -11,10 +11,10 @@ interface PostPageProps {
 export default function PostPage({ post }: PostPageProps) {
   if (!post) {
     return (
-      <Layout title="Post Not Found - PrimeEdge">
+      <Layout title="Post Not Found - Sentinel">
         <div className="max-w-4xl mx-auto px-4 py-12 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Post not found</h1>
-          <Link href="/insights" className="text-emerald-400 hover:text-emerald-300">
+          <Link href="/insights" className="text-[#66899b] hover:text-white transition-colors">
             Back to Insights
           </Link>
         </div>
@@ -26,21 +26,21 @@ export default function PostPage({ post }: PostPageProps) {
 
   return (
     <Layout
-      title={`${post.title} - PrimeEdge by Involv`}
-      description={post.excerpt || `Read ${post.title} on PrimeEdge`}
+      title={`${post.title} - Sentinel by Involv`}
+      description={post.excerpt || `Read ${post.title} on Sentinel`}
       ogImage={post.mainImage?.asset?.url ? buildImageUrl(post.mainImage.asset.url, 1200, 630, 80) : undefined}
     >
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <nav className="mb-8">
-          <Link href="/insights" className="text-emerald-400 hover:text-emerald-300 text-sm transition-colors">
+          <Link href="/insights" className="text-[#66899b] hover:text-white text-sm transition-colors">
             ← Back to Insights
           </Link>
         </nav>
 
         {/* Main Image */}
         {post.mainImage?.asset?.url && (
-          <div className="aspect-video w-full bg-gray-800 rounded-lg overflow-hidden mb-8">
+          <div className="aspect-video w-full bg-[#1a1d21] rounded-lg overflow-hidden mb-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={buildImageUrl(post.mainImage.asset.url, 1200, 675, 80)} 
@@ -56,7 +56,7 @@ export default function PostPage({ post }: PostPageProps) {
           {post.categories && post.categories.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4">
               {post.categories.map((category) => (
-                <span key={category._id} className="bg-emerald-600 px-3 py-1 rounded-full text-sm font-medium text-white">
+                <span key={category._id} className="bg-[#66899b] px-3 py-1 rounded-full text-sm font-medium text-white">
                   {category.title}
                 </span>
               ))}
@@ -70,7 +70,7 @@ export default function PostPage({ post }: PostPageProps) {
           )}
 
           {/* Author and Meta */}
-          <div className="flex items-center justify-between py-6 border-t border-b border-gray-700">
+          <div className="flex items-center justify-between py-6 border-t border-b border-white/10">
             <div className="flex items-center">
               {/* Author Avatar */}
               {post.author?.image?.asset?.url ? (
@@ -81,7 +81,7 @@ export default function PostPage({ post }: PostPageProps) {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
               ) : (
-                <div className="w-12 h-12 rounded-full bg-emerald-600 flex items-center justify-center mr-4">
+                <div className="w-12 h-12 rounded-full bg-[#66899b] flex items-center justify-center mr-4">
                   <span className="text-lg font-medium text-white">
                     {post.author?.name?.charAt(0).toUpperCase() || '?'}
                   </span>
@@ -120,7 +120,7 @@ export default function PostPage({ post }: PostPageProps) {
                 h2: ({children}) => <h2 className="text-2xl font-bold mt-6 mb-3 text-white">{children}</h2>,
                 h3: ({children}) => <h3 className="text-xl font-bold mt-4 mb-2 text-white">{children}</h3>,
                 blockquote: ({children}) => (
-                  <blockquote className="border-l-4 border-emerald-500 pl-4 my-6 italic text-gray-300">
+                  <blockquote className="border-l-4 border-[#66899b] pl-4 my-6 italic text-gray-300">
                     {children}
                   </blockquote>
                 ),
@@ -137,11 +137,28 @@ export default function PostPage({ post }: PostPageProps) {
                 strong: ({children}) => <strong className="font-bold text-white">{children}</strong>,
                 em: ({children}) => <em className="italic">{children}</em>,
                 link: ({children, value}) => (
-                  <a href={value.href} className="text-emerald-400 hover:text-emerald-300 underline transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href={value.href} className="text-[#66899b] hover:text-white underline transition-colors" target="_blank" rel="noopener noreferrer">
                     {children}
                   </a>
                 ),
               },
+              types: {
+                image: ({value}: any) => (
+                  <div className="my-8">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={buildImageUrl(value.asset.url, 1000, 562, 80)}
+                      alt={value.alt || ''}
+                      className="w-full rounded-lg"
+                    />
+                    {value.caption && (
+                      <p className="text-gray-400 text-sm mt-2 text-center italic">
+                        {value.caption}
+                      </p>
+                    )}
+                  </div>
+                )
+              }
             }}
           />
         </div>
@@ -152,7 +169,7 @@ export default function PostPage({ post }: PostPageProps) {
             <h3 className="text-lg font-semibold mb-3 text-white">Tags</h3>
             <div className="flex flex-wrap gap-2">
               {post.tags.map((tag) => (
-                <span key={tag} className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm">
+                <span key={tag} className="bg-[#1a1d21] text-gray-300 px-3 py-1 rounded-full text-sm">
                   #{tag}
                 </span>
               ))}
@@ -166,7 +183,7 @@ export default function PostPage({ post }: PostPageProps) {
             <h3 className="text-lg font-semibold mb-3 text-white">Jurisdictions</h3>
             <div className="flex flex-wrap gap-2">
               {post.jurisdictions.map((jurisdiction) => (
-                <span key={jurisdiction} className="bg-gray-700 text-gray-200 px-3 py-1 rounded text-sm font-medium">
+                <span key={jurisdiction} className="bg-[#121418] text-gray-200 px-3 py-1 rounded text-sm font-medium">
                   {jurisdiction.toUpperCase()}
                 </span>
               ))}
@@ -175,9 +192,9 @@ export default function PostPage({ post }: PostPageProps) {
         )}
 
         {/* Navigation */}
-        <div className="pt-8 border-t border-gray-700">
+        <div className="pt-8 border-top border-white/10">
           <div className="flex justify-between items-center">
-            <Link href="/insights" className="text-emerald-400 hover:text-emerald-300 flex items-center transition-colors">
+            <Link href="/insights" className="text-[#66899b] hover:text-white flex items-center transition-colors">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
               </svg>
@@ -185,7 +202,7 @@ export default function PostPage({ post }: PostPageProps) {
             </Link>
             
             <div className="text-right">
-              <Link href="/contact" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-4 py-2 rounded transition-all duration-200">
+              <Link href="/contact" className="bg-[#66899b] hover:bg-opacity-80 text-white px-4 py-2 rounded transition-all duration-200">
                 Get in Touch
               </Link>
             </div>
@@ -197,8 +214,8 @@ export default function PostPage({ post }: PostPageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Get all posts that include 'primeedge' in their sites array
-  const posts = await getPosts('primeedge', 100) // Get more posts for paths
+  // Get all posts that include 'sentinel' in their sites array
+  const posts = await getPosts('sentinel', 100)
   
   const paths = posts.map((post) => ({
     params: { slug: post.slug.current }
@@ -224,8 +241,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       return { notFound: true }
     }
 
-    // Check if this post is available for the 'primeedge' site
-    if (!post.sites.includes('primeedge')) {
+    // Check if this post is available for the 'sentinel' site
+    if (!post.sites.includes('sentinel')) {
       return { notFound: true }
     }
 
